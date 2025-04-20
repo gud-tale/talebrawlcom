@@ -594,8 +594,6 @@ header {
     }
 }
 
-
-
 .cursor {
     display: inline-block;
     width: 0.5em;
@@ -682,7 +680,79 @@ header {
     vertical-align: middle;
 }
 
+.mod-feature {
+    position: relative;
+    padding: 16px 30px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow:
+      0 10px 20px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title-with-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tag {
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.tag-color-exploit {
+    background-color: #ff4d4d;
+}
+
+.tag-color-half-exploit {
+    background-color: #005f18;
+}
+
+.tag-color-visual {
+    background-color: #3684ce;
+}
+
+.tag-color-beta {
+    background-color: #b600ad;
+}
+
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.gradient-text-yellow {
+    font-weight: bold;
+    background-color: #ffd000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.emoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
 /*#endregion Other*/
+
+
 
 @media (max-width: 400px) {
     .talemain {
